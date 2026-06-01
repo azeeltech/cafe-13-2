@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe 13 Patna | Premium Cafe & Restaurant in Boring Road</title>
+  <meta name="description" content="Welcome to Cafe 13 (कैफ़े 13) in Boring Road, Patna. Indulge in premium coffee, cozy swing seating, gourmet pizzas, pasta, and shakes in an Instagrammable ambience.">
+  <meta name="keywords" content="Best Cafe in Patna, Cafe near Boring Road, Best coffee cafe in Patna, Instagrammable cafe in Patna, Cafe 13 Patna">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cafe 13 Patna | Premium Cafe & Restaurant">
+  <meta property="og:description" content="Patna's most loved premium cafe experience.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrRestaurant",
+    "name": "Cafe 13",
+    "alternateName": "कैफ़े १३",
+    "priceRange": "₹200-₹400",
+    "telephone": "095255 66665",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1st Floor, Surya Crystal, Boring Rd, Opp. Karlo Automobiles, Anandpuri",
+      "addressLocality": "Patna",
+      "addressRegion": "Bihar",
+      "postalCode": "800001",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"22:00"}],
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"4313"}
+  }
+  </script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">
+      <span class="pl-main">CAFE</span>
+      <span class="pl-num">13</span>
+    </div>
+    <div class="preloader-bar"><div class="preloader-progress" id="preloader-progress"></div></div>
+    <div class="preloader-text" id="preloader-text">Brewing something special…</div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor-outer" id="cursor-outer"></div>
+<div class="cursor-inner" id="cursor-inner"></div>
+
+<!-- NOISE OVERLAY -->
+<div class="noise-overlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="scroll-progress-bar" id="scroll-progress"></div>
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="nl-main">CAFE 13</span>
+      <span class="nl-sub">कैफ़े १३ · EST. 2019</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#home" class="nm-link active">Home</a></li>
+      <li><a href="#about" class="nm-link">Story</a></li>
+      <li><a href="#menu" class="nm-link">Menu</a></li>
+      <li><a href="#experiences" class="nm-link">Experience</a></li>
+      <li><a href="#gallery" class="nm-link">Gallery</a></li>
+      <li><a href="#reviews" class="nm-link">Reviews</a></li>
+      <li><a href="#location" class="nm-link">Visit</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#reservation" class="nav-cta">Reserve a Table</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer">
+  <button class="drawer-close" id="drawer-close">&times;</button>
+  <div class="drawer-logo"><span>CAFE 13</span><small>कैफ़े १३</small></div>
+  <ul class="drawer-nav">
+    <li><a href="#home" class="dn-link">Home</a></li>
+    <li><a href="#about" class="dn-link">Our Story</a></li>
+    <li><a href="#menu" class="dn-link">Menu</a></li>
+    <li><a href="#experiences" class="dn-link">Experiences</a></li>
+    <li><a href="#gallery" class="dn-link">Gallery</a></li>
+    <li><a href="#reviews" class="dn-link">Reviews</a></li>
+    <li><a href="#reservation" class="dn-link">Reservations</a></li>
+    <li><a href="#location" class="dn-link">Location</a></li>
+  </ul>
+  <div class="drawer-footer">
+    <a href="#reservation" class="drawer-cta-btn">Book a Table</a>
+    <div class="drawer-socials">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="tel:09525566665"><i class="fas fa-phone"></i></a>
+    </div>
+    <p class="drawer-address">Boring Road, Patna · Open 9AM–10PM</p>
+  </div>
+</div>
+<div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section id="home" class="hero">
+  <!-- Layered background images with ken burns -->
+  <div class="hero-slides">
+    <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1920&q=85&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920&q=85&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1920&q=85&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1920&q=85&fit=crop')"></div>
+  </div>
+  <div class="hero-vignette"></div>
+  <div class="hero-gradient"></div>
+
+  <!-- Floating particles -->
+  <canvas class="hero-canvas" id="hero-canvas"></canvas>
+
+  <div class="hero-content">
+    <!-- Floating badge -->
+    <div class="hero-rating-pill" data-reveal="fade-down">
+      <i class="fab fa-google"></i>
+      <span class="hrp-score">4.2 ★</span>
+      <span class="hrp-divider">|</span>
+      <span class="hrp-count">4,313 Reviews</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="ht-line" data-reveal="clip-up">Where Every</span>
+      <span class="ht-line gold-italic" data-reveal="clip-up" style="--delay:0.15s">Sip Tells</span>
+      <span class="ht-line" data-reveal="clip-up" style="--delay:0.3s">a Story.</span>
+    </h1>
+
+    <p class="hero-sub" data-reveal="fade-up" style="--delay:0.5s">
+      Patna's most cherished café — handcrafted brews, gourmet bites,<br>cozy swing seating & unforgettable moments on Boring Road.
+    </p>
+
+    <div class="hero-actions" data-reveal="fade-up" style="--delay:0.65s">
+      <a href="#reservation" class="btn-gold">Reserve a Table <i class="fas fa-arrow-right"></i></a>
+      <a href="#menu" class="btn-ghost">Explore Menu</a>
+    </div>
+
+    <div class="hero-stats" data-reveal="fade-up" style="--delay:0.8s">
+      <div class="hs-item">
+        <span class="hs-num" data-count="4313">0</span>
+        <span class="hs-label">Happy Guests</span>
+      </div>
+      <div class="hs-sep"></div>
+      <div class="hs-item">
+        <span class="hs-num" data-count="2019">0</span>
+        <span class="hs-label">Est. Since</span>
+      </div>
+      <div class="hs-sep"></div>
+      <div class="hs-item">
+        <span class="hs-num">4.2<span style="font-size:0.6em">★</span></span>
+        <span class="hs-label">Google Rating</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide Indicators -->
+  <div class="hero-slide-dots" id="slide-dots">
+    <button class="hsd active" data-slide="0"></button>
+    <button class="hsd" data-slide="1"></button>
+    <button class="hsd" data-slide="2"></button>
+    <button class="hsd" data-slide="3"></button>
+  </div>
+
+  <!-- Scroll Hint -->
+  <a href="#about" class="hero-scroll-hint">
+    <div class="hsh-mouse"><div class="hsh-wheel"></div></div>
+    <span>Scroll</span>
+  </a>
+</section>
+
+<!-- MARQUEE RIBBON -->
+<div class="marquee-ribbon">
+  <div class="marquee-track">
+    <div class="marquee-inner">
+      <span>CAFE 13 PATNA</span><span class="mx">✦</span>
+      <span>PREMIUM COFFEE</span><span class="mx">✦</span>
+      <span>SWING SEATING</span><span class="mx">✦</span>
+      <span>INSTAGRAMMABLE</span><span class="mx">✦</span>
+      <span>WOODFIRED PIZZA</span><span class="mx">✦</span>
+      <span>GOURMET PASTA</span><span class="mx">✦</span>
+      <span>BORING ROAD PATNA</span><span class="mx">✦</span>
+      <span>EST. 2019</span><span class="mx">✦</span>
+    </div>
+    <div class="marquee-inner" aria-hidden="true">
+      <span>CAFE 13 PATNA</span><span class="mx">✦</span>
+      <span>PREMIUM COFFEE</span><span class="mx">✦</span>
+      <span>SWING SEATING</span><span class="mx">✦</span>
+      <span>INSTAGRAMMABLE</span><span class="mx">✦</span>
+      <span>WOODFIRED PIZZA</span><span class="mx">✦</span>
+      <span>GOURMET PASTA</span><span class="mx">✦</span>
+      <span>BORING ROAD PATNA</span><span class="mx">✦</span>
+      <span>EST. 2019</span><span class="mx">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     ABOUT SECTION
+     ============================================================ -->
+<section id="about" class="about reveal-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="av-main">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=85&fit=crop" alt="Cafe interior with warm lighting" loading="lazy">
+          <div class="av-badge">
+            <span class="avb-num">4.2</span>
+            <span class="avb-star"><i class="fas fa-star"></i></span>
+            <span class="avb-txt">Google Rated</span>
+          </div>
+        </div>
+        <div class="av-secondary">
+          <img src="https://images.unsplash.com/photo-1507915135761-41a0a222c709?w=600&q=85&fit=crop" alt="Latte art pour" loading="lazy">
+        </div>
+        <div class="av-tertiary">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=85&fit=crop" alt="Cozy cafe atmosphere" loading="lazy">
+        </div>
+        <div class="av-year-tag">Since <strong>2019</strong></div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-eyebrow">Our Story</span>
+        <h2 class="section-heading">More Than<br><em>Just a Café.</em></h2>
+        <div class="sh-line"></div>
+
+        <p class="at-lead">
+          Nestled in the vibrant heart of Boring Road, Patna, Cafe 13 <span class="hindi-inline">(कैफ़े १३)</span> is a sanctuary where youth culture, exquisite taste, and premium hospitality converge.
+        </p>
+        <p class="at-body">
+          From the careful roasting of our premium beans to the warm, aesthetically curated interiors, every detail is engineered to make you feel at home. Whether you're sinking into our signature swing seating, sharing laughs with family, completing work in our cozy corners — you're part of something special.
+        </p>
+
+        <div class="about-pillars">
+          <div class="ap-item" data-anim="stagger">
+            <div class="api-icon"><i class="fas fa-couch"></i></div>
+            <div><strong>Swing Seating</strong><small>Instagrammable corners</small></div>
+          </div>
+          <div class="ap-item" data-anim="stagger">
+            <div class="api-icon"><i class="fas fa-mug-hot"></i></div>
+            <div><strong>Artisan Coffee</strong><small>Single-origin beans</small></div>
+          </div>
+          <div class="ap-item" data-anim="stagger">
+            <div class="api-icon"><i class="fas fa-wifi"></i></div>
+            <div><strong>Work-Friendly</strong><small>High-speed Wi-Fi</small></div>
+          </div>
+          <div class="ap-item" data-anim="stagger">
+            <div class="api-icon"><i class="fas fa-fire"></i></div>
+            <div><strong>Woodfired Oven</strong><small>Fresh every order</small></div>
+          </div>
+        </div>
+
+        <a href="#menu" class="btn-outline-gold">Explore Our Menu <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED EXPERIENCES SECTION
+     ============================================================ -->
+<section id="experiences" class="experiences reveal-section">
+  <div class="container">
+    <div class="section-header-center">
+      <span class="section-eyebrow">At Cafe 13</span>
+      <h2 class="section-heading center">Crafted <em>Experiences</em></h2>
+      <div class="sh-line center"></div>
+    </div>
+
+    <div class="exp-grid">
+      <div class="exp-card" data-anim="stagger">
+        <div class="ec-img">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=700&q=85&fit=crop" alt="Barista crafting espresso" loading="lazy">
+        </div>
+        <div class="ec-body">
+          <span class="ec-num">01</span>
+          <h3>Artisan Coffee Bar</h3>
+          <p>Single-origin beans, expert extraction, latte art — every cup is a ritual crafted with obsessive care.</p>
+        </div>
+      </div>
+
+      <div class="exp-card large" data-anim="stagger" style="--stagger:0.1s">
+        <div class="ec-img">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=900&q=85&fit=crop" alt="Beautiful restaurant interior" loading="lazy">
+        </div>
+        <div class="ec-body">
+          <span class="ec-num">02</span>
+          <h3>Iconic Swing Seating</h3>
+          <p>Patna's most photographed seating — suspended swings, warm Edison bulbs, raw wood textures that transport you.</p>
+          <a href="#gallery" class="ec-link">See Gallery <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="exp-card" data-anim="stagger" style="--stagger:0.2s">
+        <div class="ec-img">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700&q=85&fit=crop" alt="Gourmet pizza" loading="lazy">
+        </div>
+        <div class="ec-body">
+          <span class="ec-num">03</span>
+          <h3>Gourmet Kitchen</h3>
+          <p>Woodfired pizzas, house-made pastas, Indo-fusion bites — a menu that celebrates bold, honest flavors.</p>
+        </div>
+      </div>
+
+      <div class="exp-card" data-anim="stagger" style="--stagger:0.3s">
+        <div class="ec-img">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b19f?w=700&q=85&fit=crop" alt="Desserts spread" loading="lazy">
+        </div>
+        <div class="ec-body">
+          <span class="ec-num">04</span>
+          <h3>Decadent Desserts</h3>
+          <p>Sizzling brownies, lava cakes, premium shakes — every sweet moment made to be remembered.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MENU SECTION
+     ============================================================ -->
+<section id="menu" class="menu-section reveal-section">
+  <div class="container">
+    <div class="section-header-center">
+      <span class="section-eyebrow">Handcrafted Flavors</span>
+      <h2 class="section-heading center">The Culinary <em>Canvas</em></h2>
+      <div class="sh-line center"></div>
+      <p class="section-subtext">Explore freshly ground coffees, gourmet pizzas, house-made pastas, refreshing mocktails, and decadent desserts.</p>
+    </div>
+
+    <div class="menu-tabs-wrap">
+      <div class="menu-tabs" id="menu-tabs">
+        <button class="mt active" data-cat="coffee"><i class="fas fa-mug-hot"></i> Coffee</button>
+        <button class="mt" data-cat="shakes"><i class="fas fa-glass-whiskey"></i> Shakes</button>
+        <button class="mt" data-cat="pizza"><i class="fas fa-pizza-slice"></i> Pizza</button>
+        <button class="mt" data-cat="pasta"><i class="fas fa-utensils"></i> Pasta</button>
+        <button class="mt" data-cat="breakfast"><i class="fas fa-sun"></i> Breakfast</button>
+        <button class="mt" data-cat="lunch"><i class="fas fa-hamburger"></i> Lunch</button>
+        <button class="mt" data-cat="dinner"><i class="fas fa-moon"></i> Dinner</button>
+        <button class="mt" data-cat="drinks"><i class="fas fa-cocktail"></i> Drinks</button>
+        <button class="mt" data-cat="desserts"><i class="fas fa-ice-cream"></i> Desserts</button>
+        <button class="mt" data-cat="snacks"><i class="fas fa-pepper-hot"></i> Snacks</button>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="menu-grid"></div>
+
+    <!-- Cart Dock -->
+    <div class="cart-dock" id="cart-dock">
+      <div class="cd-left">
+        <div class="cd-icon"><i class="fas fa-shopping-bag"></i></div>
+        <div>
+          <div class="cd-items" id="cd-items">0 items</div>
+          <div class="cd-total" id="cd-total">₹0.00</div>
+        </div>
+      </div>
+      <a href="#reservation" class="cd-btn">Reserve & Order <i class="fas fa-chevron-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY SECTION
+     ============================================================ -->
+<section id="gallery" class="gallery-section reveal-section">
+  <div class="container">
+    <div class="section-header-center">
+      <span class="section-eyebrow">Visual Stories</span>
+      <h2 class="section-heading center">The <em>Gram-Worthy</em> Space</h2>
+      <div class="sh-line center"></div>
+    </div>
+
+    <div class="gallery-masonry" id="gallery-masonry">
+      <div class="gm-item tall" data-index="0">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80&fit=crop" alt="Warm cafe interior" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Cozy Vibes</span></div>
+      </div>
+      <div class="gm-item" data-index="1">
+        <img src="https://images.unsplash.com/photo-1522992319-0365e5f11656?w=600&q=80&fit=crop" alt="Latte art" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Latte Art</span></div>
+      </div>
+      <div class="gm-item wide" data-index="2">
+        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3b14?w=900&q=80&fit=crop" alt="Food spread" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Food Artistry</span></div>
+      </div>
+      <div class="gm-item" data-index="3">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80&fit=crop" alt="Margherita pizza" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Fresh Pizza</span></div>
+      </div>
+      <div class="gm-item tall" data-index="4">
+        <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=800&q=80&fit=crop" alt="Brownie dessert" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Fudge Brownie</span></div>
+      </div>
+      <div class="gm-item" data-index="5">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80&fit=crop" alt="Coffee cup" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Morning Brew</span></div>
+      </div>
+      <div class="gm-item wide" data-index="6">
+        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=900&q=80&fit=crop" alt="Pasta dish" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Penne Pasta</span></div>
+      </div>
+      <div class="gm-item" data-index="7">
+        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&q=80&fit=crop" alt="Chocolate shake" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Choco Shake</span></div>
+      </div>
+      <div class="gm-item tall" data-index="8">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80&fit=crop" alt="Coffee bar" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Coffee Bar</span></div>
+      </div>
+      <div class="gm-item" data-index="9">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80&fit=crop" alt="Lava cake" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Lava Cake</span></div>
+      </div>
+      <div class="gm-item" data-index="10">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&q=80&fit=crop" alt="Iced latte" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Iced Latte</span></div>
+      </div>
+      <div class="gm-item wide" data-index="11">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80&fit=crop" alt="Cafe seating" loading="lazy">
+        <div class="gm-overlay"><i class="fab fa-instagram"></i><span>Ambient Space</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-cta-row">
+      <a href="https://instagram.com" target="_blank" class="btn-outline-gold">Follow on Instagram <i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close">&times;</button>
+  <button class="lb-prev" id="lb-prev"><i class="fas fa-chevron-left"></i></button>
+  <div class="lb-content">
+    <img src="" id="lb-img" alt="">
+    <p class="lb-caption" id="lb-caption"></p>
+  </div>
+  <button class="lb-next" id="lb-next"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<!-- ============================================================
+     REVIEWS SECTION
+     ============================================================ -->
+<section id="reviews" class="reviews-section reveal-section">
+  <div class="container">
+    <div class="section-header-center">
+      <span class="section-eyebrow">Loved by Patna</span>
+      <h2 class="section-heading center">Real Guests, <em>Real Love</em></h2>
+      <div class="sh-line center"></div>
+      <div class="reviews-score">
+        <div class="rs-stars">★★★★<span style="opacity:0.5">★</span></div>
+        <div class="rs-info">4.2 · 4,313 Google Reviews</div>
+      </div>
+    </div>
+
+    <div class="swiper reviews-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="rc-quote">"</div>
+            <p class="rc-text">Perfect café to work peacefully with amazing coffee and cozy ambience. The swing seating adds a really fun touch, and their staff is extremely polite. Best café in Patna, hands down.</p>
+            <div class="rc-footer">
+              <div class="rc-avatar" style="background:linear-gradient(135deg,#667eea,#764ba2)">R</div>
+              <div>
+                <div class="rc-name">Rahul Sharma</div>
+                <div class="rc-meta">Google Local Guide · 1 week ago · ★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="rc-quote">"</div>
+            <p class="rc-text">Food quality and quantity both were excellent. Staff behavior was extremely polite and their Penne pasta is probably the best in Patna. Highly recommended for couples and families!</p>
+            <div class="rc-footer">
+              <div class="rc-avatar" style="background:linear-gradient(135deg,#f093fb,#f5576c)">A</div>
+              <div>
+                <div class="rc-name">Anjali Singh</div>
+                <div class="rc-meta">Verified Diner · 3 days ago · ★★★★½</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="rc-quote">"</div>
+            <p class="rc-text">One of the best cafés in Patna with beautiful interiors and delicious pasta. Got an amazing vibe — very couple and family friendly. The latte art is something else entirely!</p>
+            <div class="rc-footer">
+              <div class="rc-avatar" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">V</div>
+              <div>
+                <div class="rc-name">Vikram Aditya</div>
+                <div class="rc-meta">Google Review · 2 weeks ago · ★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="rc-quote">"</div>
+            <p class="rc-text">Affordable prices, premium ambience, and amazing shakes. The KitKat premium shake is a MUST try. The whole vibe of Cafe 13 is outstanding! Will keep coming back!</p>
+            <div class="rc-footer">
+              <div class="rc-avatar" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">P</div>
+              <div>
+                <div class="rc-name">Pooja Kumari</div>
+                <div class="rc-meta">Local Guide · 1 month ago · ★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="rc-quote">"</div>
+            <p class="rc-text">Loved the swing seating and warm atmosphere. Perfect place for birthdays or cozy dates on Boring Road. 10/10 for hospitality — they genuinely care about every guest.</p>
+            <div class="rc-footer">
+              <div class="rc-avatar" style="background:linear-gradient(135deg,#fa709a,#fee140)">A</div>
+              <div>
+                <div class="rc-name">Aditya Ranjan</div>
+                <div class="rc-meta">Google Review · 2 days ago · ★★★★½</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="rc-quote">"</div>
+            <p class="rc-text">The woodfired pizza here is mind-blowing! Crispy base, fresh toppings, and that smoky flavor you can't get elsewhere in Patna. Pair it with a mojito — absolute heaven.</p>
+            <div class="rc-footer">
+              <div class="rc-avatar" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)">S</div>
+              <div>
+                <div class="rc-name">Sonal Mishra</div>
+                <div class="rc-meta">Google Review · 5 days ago · ★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RESERVATION SECTION
+     ============================================================ -->
+<section id="reservation" class="reservation-section reveal-section">
+  <div class="reservation-bg">
+    <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1920&q=70&fit=crop" alt="Cafe background" loading="lazy">
+    <div class="res-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="reservation-grid">
+      <div class="res-info">
+        <span class="section-eyebrow light">Private Booking</span>
+        <h2 class="section-heading light">Reserve <em>Your Table</em></h2>
+        <div class="sh-line"></div>
+        <p class="res-intro">Ensure a seamless experience at Cafe 13. Choose your seating preference, date, and time. We hold reservations for up to 15 minutes past the scheduled arrival.</p>
+
+        <div class="seating-grid">
+          <div class="seat-card active" data-seat="couple">
+            <i class="fas fa-user-friends"></i>
+            <h4>Couple</h4>
+            <p>Cozy corner, soft lighting</p>
+          </div>
+          <div class="seat-card" data-seat="family">
+            <i class="fas fa-users"></i>
+            <h4>Family</h4>
+            <p>Spacious, central layouts</p>
+          </div>
+          <div class="seat-card" data-seat="group">
+            <i class="fas fa-glass-cheers"></i>
+            <h4>Group Swing</h4>
+            <p>Hanging swings & sofas</p>
+          </div>
+          <div class="seat-card" data-seat="work">
+            <i class="fas fa-laptop"></i>
+            <h4>Work Desk</h4>
+            <p>Charging ports, quiet</p>
+          </div>
+        </div>
+
+        <div class="res-quick-info">
+          <div class="rqi-item"><i class="fas fa-clock"></i> Open daily 09:00 AM – 10:00 PM</div>
+          <div class="rqi-item"><i class="fas fa-phone"></i> <a href="tel:09525566665">095255 66665</a></div>
+          <div class="rqi-item"><i class="fas fa-map-marker-alt"></i> Boring Road, Anandpuri, Patna</div>
+        </div>
+      </div>
+
+      <div class="res-form-wrap">
+        <form id="res-form" class="res-form" novalidate>
+          <h3 class="rf-title">Reservation Details</h3>
+          <input type="hidden" id="seat-type" value="couple">
+
+          <div class="rf-field">
+            <input type="text" id="rf-name" placeholder=" " required>
+            <label for="rf-name">Full Name</label>
+            <span class="rf-err" id="err-name"></span>
+          </div>
+
+          <div class="rf-row">
+            <div class="rf-field">
+              <input type="tel" id="rf-phone" placeholder=" " required>
+              <label for="rf-phone">Mobile Number</label>
+              <span class="rf-err" id="err-phone"></span>
+            </div>
+            <div class="rf-field">
+              <input type="email" id="rf-email" placeholder=" " required>
+              <label for="rf-email">Email Address</label>
+              <span class="rf-err" id="err-email"></span>
+            </div>
+          </div>
+
+          <div class="rf-row">
+            <div class="rf-field">
+              <input type="number" id="rf-guests" placeholder=" " min="1" max="25" required>
+              <label for="rf-guests">Guests (1–25)</label>
+              <span class="rf-err" id="err-guests"></span>
+            </div>
+            <div class="rf-field">
+              <input type="date" id="rf-date" placeholder=" " required>
+              <label for="rf-date">Date</label>
+              <span class="rf-err" id="err-date"></span>
+            </div>
+          </div>
+
+          <div class="rf-field">
+            <input type="time" id="rf-time" placeholder=" " required>
+            <label for="rf-time">Time (9:00 AM – 9:30 PM)</label>
+            <span class="rf-err" id="err-time"></span>
+          </div>
+
+          <div class="rf-field">
+            <textarea id="rf-note" rows="3" placeholder=" "></textarea>
+            <label for="rf-note">Special Requests (decoration, seating preferences…)</label>
+          </div>
+
+          <button type="submit" class="rf-submit" id="rf-submit">
+            <span class="rfs-text">Confirm Reservation</span>
+            <span class="rfs-spinner" style="display:none"><i class="fas fa-spinner fa-spin"></i></span>
+          </button>
+        </form>
+
+        <div class="res-success" id="res-success">
+          <div class="rs-check"><i class="fas fa-check-circle"></i></div>
+          <h3>Table Reserved!</h3>
+          <p>Your confirmation details have been saved. We look forward to welcoming you!</p>
+          <div class="rs-summary" id="rs-summary"></div>
+          <button class="btn-outline-gold" id="rs-done">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOCATION SECTION
+     ============================================================ -->
+<section id="location" class="location-section reveal-section">
+  <div class="container">
+    <div class="location-grid">
+      <div class="loc-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5878484196144!2d85.11602511195655!3d25.618600000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59807c43d931%3A0xb4c5a5f56ca352d3!2sc13%20cafe!5e0!3m2!1sen!2sin!4v1716912345678!5m2!1sen!2sin"
+          width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+          title="Cafe 13 Location Map">
+        </iframe>
+      </div>
+      <div class="loc-info">
+        <span class="section-eyebrow">Find Us</span>
+        <h2 class="section-heading">At the Heart<br><em>of Patna.</em></h2>
+        <div class="sh-line"></div>
+
+        <div class="loc-details">
+          <div class="ld-item">
+            <div class="ld-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Address</strong>
+              <p>1st Floor, Surya Crystal, Boring Rd,<br>Opp. Karlo Automobiles, Anandpuri,<br>Patna, Bihar 800001</p>
+            </div>
+          </div>
+          <div class="ld-item">
+            <div class="ld-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:09525566665">095255 66665</a></p>
+            </div>
+          </div>
+          <div class="ld-item">
+            <div class="ld-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Hours</strong>
+              <p>Open Daily: 9:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+          <div class="ld-item">
+            <div class="ld-icon"><i class="fas fa-motorcycle"></i></div>
+            <div>
+              <strong>Delivery</strong>
+              <p>Available via Swiggy & Zomato</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://google.com/maps/place/c13+cafe/data=!4m2!3m1!1s0x39ed59807c43d931:0xb4c5a5f56ca352d3" target="_blank" class="btn-gold">
+          <i class="fas fa-directions"></i> Get Directions
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer id="contact" class="footer">
+  <div class="footer-glow-line"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="fg-brand">
+        <div class="footer-logo">
+          <span class="fl-main">CAFE 13</span>
+          <span class="fl-sub">कैफ़े १३</span>
+        </div>
+        <p class="fg-desc">Patna's finest café experience. Premium brews, gourmet food, and Instagrammable swing seating in the heart of Boring Road.</p>
+        <div class="fg-socials">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        <div class="fg-badges">
+          <span><i class="fas fa-heart"></i> Women-Owned</span>
+          <span><i class="fas fa-rainbow"></i> LGBTQ+ Friendly</span>
+        </div>
+      </div>
+
+      <div class="fg-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </div>
+
+      <div class="fg-newsletter">
+        <h4>Stay in the Loop</h4>
+        <p>Get secret recipes, special events, and exclusive deals delivered to your inbox.</p>
+        <form class="nl-form" id="nl-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="fg-insta-grid">
+          <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=120&q=70&fit=crop" alt="Insta post" loading="lazy"></a>
+          <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=120&q=70&fit=crop" alt="Insta post" loading="lazy"></a>
+          <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=120&q=70&fit=crop" alt="Insta post" loading="lazy"></a>
+          <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=120&q=70&fit=crop" alt="Insta post" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Cafe 13 Patna. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color:#D4AF37"></i> for coffee lovers.</p>
+      <div class="fb-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Sticky CTA -->
+<div class="mobile-book-cta">
+  <a href="tel:09525566665" class="mbc-call"><i class="fas fa-phone"></i></a>
+  <a href="#reservation" class="mbc-book">Book a Table</a>
+</div>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
