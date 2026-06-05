@@ -7,7 +7,7 @@
 const MENU = {
   coffee: [
     { name:'Cappuccino', price:180, desc:'Rich double espresso topped with velvety steamed milk and a dusting of artisan cocoa powder.', veg:true, badge:'Bestseller', tag:'Hot Brew', img:'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80&fit=crop' },
-    { name:'Latte Macchiato', price:190, desc:'Micro-foam milk marked with a single premium organic espresso — delicate, silky, unforgettable.', veg:true, badge:null, tag:'Hot Brew', img:'https://images.unsplash.com/photo-1598802585562-f705a6ab4301?w=600&q=80&fit=crop' },
+    { name:'Latte Macchiato', price:190, desc:'Micro-foam milk marked with a single premium organic espresso — delicate, silky, unforgettable.', veg:true, badge:null, tag:'Hot Brew', img:'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80&fit=crop' },
     { name:'Flat White', price:210, desc:'Double ristretto blended with thin-textured whole milk preserving the bold aromatic espresso punch.', veg:true, badge:null, tag:'Hot Brew', img:'https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=600&q=80&fit=crop' },
     { name:'Iced Caramel Latte', price:230, desc:'Cold brew espresso layered over whole milk, ice, and house-made caramel drizzle. Summer in a glass.', veg:true, badge:'Summer Hit', tag:'Cold Brew', img:'https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&q=80&fit=crop' },
     { name:'Cold Brew', price:220, desc:'18-hour steeped single-origin cold brew — smooth, bold, zero bitterness. Black or with oat milk.', veg:true, badge:null, tag:'Cold Brew', img:'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&fit=crop' },
